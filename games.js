@@ -13,6 +13,15 @@ $(document).keypress(function(event) {
   } else {}
 }
 });
+$("h1").click(function(event) {
+  if(event.key === "A" || event.key === "a"){
+  if (started == false) {
+    $("#level-title").text("Level 0");
+    nextSequence();
+    started = true;
+  } else {}
+}
+});
 //BUTTON CONTROL
 $(".btn").click(function() {
   var userChosenColour = $(this).attr("id");
