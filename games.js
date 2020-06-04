@@ -19,6 +19,7 @@ $("#level-title").click(function(event) {
     nextSequence();
     started = true;
   } else {}
+
 });
 //BUTTON CONTROL
 $(".btn").click(function() {
