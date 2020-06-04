@@ -13,14 +13,12 @@ $(document).keypress(function(event) {
   } else {}
 }
 });
-$("h1").click(function(event) {
-  if(event.key === "A" || event.key === "a"){
+$("#level-title").click(function(event) {
   if (started == false) {
     $("#level-title").text("Level 0");
     nextSequence();
     started = true;
   } else {}
-}
 });
 //BUTTON CONTROL
 $(".btn").click(function() {
