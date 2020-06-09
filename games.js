@@ -68,9 +68,12 @@ function startOver(){
   $("body").addClass("game-over");
   $("#level-title").text("GAME OVER!");
   setTimeout(function(){
+    $("#level-title").text(level + " WAS YOUR LAST LEVEL");
+  },2000);
+  setTimeout(function(){
     $("#level-title").text("PRESS A TO START!");
     $("body").toggleClass("game-over");
-  },2000);
+  },5000);
   //SETTING EVERYTHING TO 0 & NULL
   gamePattern = [];
   userClickedPattern = [];
